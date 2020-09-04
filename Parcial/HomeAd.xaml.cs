@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -16,18 +14,13 @@ using System.Windows.Shapes;
 namespace Parcial
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Lógica de interacción para HomeAd.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class HomeAd : Page
     {
-        public MainWindow()
+        public HomeAd()
         {
             InitializeComponent();
-        }
-        private void Window_Loaded(object sender, RoutedEventArgs e)
-        {
-            MainFrame.NavigationService.Navigate(new Page1());
-
         }
     }
 }
