@@ -32,9 +32,13 @@ namespace Parcial
                 int especial = Convert.ToInt32(txtEspecial.Text) * 2000;
                 string cédula = txtCC.Text;
                 string nombre = txtName.Text;
-                
-                string text = "-The user: " + nombre + ", con CC: " + cédula + " compró: $" + aliñado + " de aliñado, $" + noAliñado + " de no aliñado, y $"+ especial + " de especial" + "\n";
+                string date = txtAux.Text;
+                txtAux.Text = calCalendario.SelectedDate.ToString();
+                int total = aliñado + noAliñado + especial;
+
+                string text = "-The user: " + nombre + ", con CC: " + cédula + " compró: $" + aliñado + " de aliñado, $" + noAliñado + " de no aliñado, y $" + especial + " de especial, para un total de " + total + " el día " + date + "\n";
                 txtResults.Text += text;
+
             }
             else
             {
@@ -43,8 +47,14 @@ namespace Parcial
                 int especial = 0;
                 string cédula = txtCC.Text;
                 string nombre = txtName.Text;
-                string text = "-The user: " + nombre + ", con CC: " + cédula + "compró: $" + aliñado + "de aliñado, $" + noAliñado + "de no aliñado, y $" + especial + "de especial" + "\n";
+                string date = txtAux.Text;
+                txtAux.Text = calCalendario.SelectedDate.ToString();
+                int total = aliñado + noAliñado + especial;
+
+                string text = "-The user: " + nombre + ", con CC: " + cédula + " compró: $" + aliñado + " de aliñado, $" + noAliñado + " de no aliñado, y $" + especial + " de especial, para un total de " + total + " el día " + date + "\n";
                 txtResults.Text += text;
+
+
             }
         }
     }

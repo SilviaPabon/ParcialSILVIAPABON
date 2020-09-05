@@ -9,20 +9,23 @@
       Title="HomeEm" Background="#FFFFFDD6">
 
     <Grid>
-        <Label Content="Seleccione el pan" HorizontalAlignment="Left" Margin="34,51,0,0" VerticalAlignment="Top"/>
+        <Label Content="Seleccione el pan" HorizontalAlignment="Left" Margin="-4,12,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtResults" HorizontalAlignment="Left" Margin="591,59,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="189" Height="196"/>
         <Label Content="C.C." HorizontalAlignment="Left" Margin="34,237,0,0" VerticalAlignment="Top"/>
         <Label Content="Nombre cliente" HorizontalAlignment="Left" Margin="34,282,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtCC" HorizontalAlignment="Left" Margin="144,237,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="txtName" HorizontalAlignment="Left" Margin="144,286,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <CheckBox x:Name="chkAliñado" Content="Aliñado" HorizontalAlignment="Left" Margin="133,82,0,0" VerticalAlignment="Top"/>
-        <CheckBox x:Name="chkNoaliñado" Content="No Aliñado" HorizontalAlignment="Left" Margin="133,124,0,0" VerticalAlignment="Top"/>
-        <CheckBox x:Name="chkEspecial" Content="Especial" HorizontalAlignment="Left" Margin="133,163,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="btnVender" Content="Vender Producto" HorizontalAlignment="Left" Margin="429,310,0,0" VerticalAlignment="Top" Click="btnVender_Click"/>
-        <TextBox x:Name="txtAliñ" HorizontalAlignment="Left" Margin="293,79,0,0" Text="0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="txtNoAli" HorizontalAlignment="Left" Margin="293,124,0,0" Text="0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="txtEspecial" HorizontalAlignment="Left" Margin="293,0,0,0" Text="0" TextWrapping="Wrap" VerticalAlignment="Center" Width="120"/>
-        <Label Content="Ingrese la cantidad:" HorizontalAlignment="Left" Margin="288,49,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.345,0.147"/>
+        <CheckBox x:Name="chkAliñado" Content="Aliñado" HorizontalAlignment="Left" Margin="95,43,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="chkNoaliñado" Content="No Aliñado" HorizontalAlignment="Left" Margin="95,85,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="chkEspecial" Content="Especial" HorizontalAlignment="Left" Margin="95,124,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnVender" Content="Vender Producto" HorizontalAlignment="Left" Margin="489,310,0,0" VerticalAlignment="Top" Click="btnVender_Click"/>
+        <TextBox x:Name="txtAliñ" HorizontalAlignment="Left" Margin="255,40,0,0" Text="0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtNoAli" HorizontalAlignment="Left" Margin="255,85,0,0" Text="0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtEspecial" HorizontalAlignment="Left" Margin="255,127,0,0" Text="0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Ingrese la cantidad:" HorizontalAlignment="Left" Margin="250,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.345,0.147"/>
+        <Calendar x:Name="calCalendario" HorizontalAlignment="Left" Margin="290,179,0,0" VerticalAlignment="Top" Width="177"/>
+        <TextBox x:Name="txtAux" HorizontalAlignment="Left" Margin="489,277,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Visibility="Hidden"/>
+        <Label Content="Escoja fecha" HorizontalAlignment="Left" Margin="290,150,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Page>
